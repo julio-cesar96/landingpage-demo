@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing Page Ebook Opções Binárias</title>
+    <!-- Link para o CSS do Tailwind -->
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <style>
+        /* Estilos customizados podem ser adicionados aqui */
+        .carousel-container {
+            overflow: hidden;
+            width: 100%;
+            position: relative;
+        }
+
+        .carousel-inner {
+            display: flex;
+            transition: transform 0.5s ease;
+            width: auto; /* Ajustado */
+        }
+
+        .carousel-item {
+            flex: 0 0 auto;
+            padding: 0 1rem;
+            min-width: 100%; /* Ajustado */
+        }
+
+        .carousel-button {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            padding: 0.5rem;
+            background-color: rgba(255, 255, 255, 0.5);
+            border: none;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .carousel-button:hover {
+            background-color: rgba(255, 255, 255, 0.8);
+        }
+
+        .carousel-button-left {
+            left: 1rem;
+        }
+
+        .carousel-button-right {
+            right: 1rem;
+        }
+    </style>
+</head>
+<body class="bg-gray-100">
+
+<!-- Hero Section -->
+<section class="container mx-auto py-12 flex items-center justify-between">
+    <div class="max-w-md">
+        <h1 class="text-4xl font-bold text-gray-900 mb-4">Ebook: Guia Completo de Opções Binárias</h1>
+        <p class="text-lg text-gray-700 mb-6">Aprenda a negociar opções binárias com sucesso e aumente seus lucros hoje mesmo!</p>
+        <a href="#" class="bg-blue-500 hover:bg-blue-600 text-white font-bold py-3 px-6 rounded-full inline-block transition duration-300">Aproveitar essa promoção agora</a>
+    </div>
+    <img src="ebook-cover.jpg" alt="Capa do Ebook" class="w-64">
+</section>
+
+<!-- Benefits Section -->
+<section class="container mx-auto py-12">
+    <h2 class="text-3xl font-bold text-center text-gray-900 mb-8">Benefícios do Ebook</h2>
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div class="bg-white shadow rounded-lg p-6">
+            <h3 class="text-xl font-semibold text-gray-900 mb-3">Aprenda estratégias comprovadas</h3>
+            <p class="text-gray-700">Descubra as estratégias mais eficazes para negociar opções binárias com sucesso.</p>
+        </div>
+        <div class="bg-white shadow rounded-lg p-6">
+            <h3 class="text-xl font-semibold text-gray-900 mb-3">Aprenda estratégias comprovadas</h3>
+            <p class="text-gray-700">Descubra as estratégias mais eficazes para negociar opções binárias com sucesso.</p>
+        </div>
+        <div class="bg-white shadow rounded-lg p-6">
+            <h3 class="text-xl font-semibold text-gray-900 mb-3">Aprenda estratégias comprovadas</h3>
+            <p class="text-gray-700">Descubra as estratégias mais eficazes para negociar opções binárias com sucesso.</p>
+        </div>
+        <div class="bg-white shadow rounded-lg p-6">
+            <h3 class="text-xl font-semibold text-gray-900 mb-3">Aprenda estratégias comprovadas</h3>
+            <p class="text-gray-700">Descubra as estratégias mais eficazes para negociar opções binárias com sucesso.</p>
+        </div>
+        <div class="bg-white shadow rounded-lg p-6">
+            <h3 class="text-xl font-semibold text-gray-900 mb-3">Aprenda estratégias comprovadas</h3>
+            <p class="text-gray-700">Descubra as estratégias mais eficazes para negociar opções binárias com sucesso.</p>
+        </div>
+        <div class="bg-white shadow rounded-lg p-6">
+            <h3 class="text-xl font-semibold text-gray-900 mb-3">Aprenda estratégias comprovadas</h3>
+            <p class="text-gray-700">Descubra as estratégias mais eficazes para negociar opções binárias com sucesso.</p>
+        </div>
+        <!-- Outros benefícios aqui -->
+    </div>
+</section>
+
+<!-- Testimonials Section -->
+<section class="container mx-auto py-12">
+    <h2 class="text-3xl font-bold text-center text-gray-900 mb-8">Depoimentos de Clientes</h2>
+    <div id="testimonials-carousel" class="carousel">
+        <!-- Aqui os depoimentos serão inseridos dinamicamente via JavaScript -->
+        <button id="prev-testimonial" class="carousel-button carousel-button-left">&#10094;</button>
+        <button id="prev-testimonial" class="carousel-button carousel-button-left">&#10094;</button>
+    </div>
+    <div class="text-center mt-8">
+        <a href="#" class="bg-blue-500 hover:bg-blue-600 text-white font-bold py-3 px-6 rounded-full inline-block transition duration-300">Comprar Agora</a>
+    </div>
+</section>
+
+<!-- Call to Action Section -->
+<section class="container mx-auto py-12 text-center">
+    <h2 class="text-3xl font-bold text-gray-900 mb-4">Não perca tempo, comece a lucrar agora!</h2>
+    <p class="text-lg text-gray-700 mb-8">Adquira o Ebook hoje mesmo e dê o primeiro passo para o sucesso financeiro.</p>
+    <form class="mb-8">
+        <input type="email" class="w-full px-4 py-3 rounded-full border-gray-300 focus:outline-none focus:border-blue-500 mb-4" placeholder="Digite seu melhor e-mail">
+        <input type="tel" class="w-full px-4 py-3 rounded-full border-gray-300 focus:outline-none focus:border-blue-500 mb-4" placeholder="Digite seu número de Whatsapp">
+        <button type="submit" class="bg-blue-500 hover:bg-blue-600 text-white font-bold py-3 px-8 rounded-full inline-block transition duration-300">Comprar Agora</button>
+    </form>
+</section>
+
+<!-- JavaScript para o Carrossel de Depoimentos -->
+<script src="main.js"></script>
+
+</body>
+</html>
